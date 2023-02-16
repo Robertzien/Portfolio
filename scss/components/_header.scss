@@ -1,0 +1,27 @@
+.header {
+  background: $lightblack;
+  .container {
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-bottom: 0;
+  }
+  &__nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    list-style: none;
+    &-item {
+      margin-right: 2rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &-link {
+      font-size: $font-size-30;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

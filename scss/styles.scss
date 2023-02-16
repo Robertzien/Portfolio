@@ -1,0 +1,14 @@
+/* file import */
+
+//general
+@import 'general/settings';
+@import 'general/base';
+@import 'general/mixins';
+@import 'general/buttons';
+
+//components
+@import 'components/header';
+@import 'components/hero';
+@import 'components/about';
+@import 'components/footer';
+

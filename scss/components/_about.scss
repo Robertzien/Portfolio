@@ -1,0 +1,54 @@
+.about {
+  position: relative;
+  .container {
+    padding-top: 10rem;
+    align-items: center;
+  }
+  &__wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    overflow: hidden;
+    background-size: 100% 100%;
+    svg {
+      display: block;
+    }
+  }
+  &__image {
+    position: relative;
+    &:before {
+      position: absolute;
+      top: -.65rem;
+      right: -.65rem;
+      width: 375px;
+      height: 375px;
+      content: " ";
+      background: $yellow;
+      z-index: -1;
+      border-radius: $border-radius-20;
+    }
+    img {
+      display: block;
+      max-width: 600px;
+      max-height: 600px;
+      object-fit: cover;
+      aspect-ratio: 4/3;
+      border-radius: $border-radius-20;
+      box-shadow: $box-shadow;
+    }
+  }
+  &__intro {
+    margin-right: 5rem;
+  }
+  &__heading {
+    color: black;
+    margin-bottom: 1rem;
+  }
+  &__text {
+    color: black;
+    margin-bottom: 2.5rem;
+  }
+}

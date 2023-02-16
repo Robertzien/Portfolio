@@ -1,0 +1,71 @@
+.hero {
+  background: $lightblack;
+  z-index: 2;
+  position: relative;
+  overflow: visible;
+  &__background {
+    z-index: -1;
+    pointer-events: none;
+    position: absolute;
+    top: -10rem;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: .3;
+    svg {
+      display: block;
+      width: 100%;
+    }
+  }
+  .container {
+    padding-top: 2.5rem;
+    flex-flow: column nowrap;
+  }
+  &__bottom {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  &__heading {
+    font-size: 4.25rem;
+  }
+  &__intro {
+    margin-right: 1.85rem;
+  }
+  &__text {
+    font-size: $font-size-50;
+    font-weight: 300;
+  }
+  &__about {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column nowrap;
+    &-subheading {
+      color: $yellow;
+    }
+  }
+  &__image {
+    position: relative;
+    z-index: 2;
+    justify-self: center;
+    margin-right: 2.5rem;
+    &:before {
+      position: absolute;
+      bottom: -.65rem;
+      right: -.65rem;
+      width: 375px;
+      height: 375px;
+      content: " ";
+      background: $yellow;
+      z-index: -1;
+      border-radius: $border-radius-20;
+    }
+    img {
+      object-fit: cover;
+      width: 400px;
+      height: 400px;
+      border-radius: $border-radius-20;
+      box-shadow: $box-shadow;
+      display: block;
+    }
+  }
+}

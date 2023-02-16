@@ -1,0 +1,20 @@
+.button {
+  background: $lightblack;
+  padding: .85rem 1.5rem;
+  border-radius: $border-radius-full;
+  box-shadow: $box-shadow;
+  width: fit-content;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  font-weight: bold;
+  &:hover {
+    background: darken($lightblack, .5);
+  }
+  svg {
+    display: block;
+  }
+  div {
+    margin-right: .75rem;
+  }
+}
