@@ -64,9 +64,6 @@
   &:hover {
     box-shadow: $box-shadow-hover;
   }
-  &:hover .card__button:after {
-    margin-left: .5rem;
-  }
   &__content {
     margin-bottom: 3.5rem;
   }

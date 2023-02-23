@@ -8,8 +8,10 @@
   flex-flow: row nowrap;
   align-items: center;
   font-weight: bold;
+  transition: .2s;
   &:hover {
     background: darken($lightblack, .5);
+    box-shadow: $box-shadow-hover;
   }
   svg {
     display: block;
