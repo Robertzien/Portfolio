@@ -11,19 +11,25 @@
     padding: 3rem 3rem;
   };
   @media (min-width: $breakpoint-20) {
-    padding: 3rem 6rem;
+    padding: 5rem 6rem;
   };
+  @media (min-width: 1800px) {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 }
 
 body {
   margin: 0;
   position: relative;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-heading;
   margin-top: 0;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 h1 {
