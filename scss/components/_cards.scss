@@ -6,7 +6,7 @@
   }
   &__background {
     position: absolute;
-    top: 35%;
+    top: 12.5%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -14,24 +14,43 @@
     width: 100%;
     overflow: hidden;
     background-size: 100% 100%;
+    background:linear-gradient(180deg, white 5%, $yellow 5%);
+    @media (min-width: 750px) {
+      background:linear-gradient(180deg, white 33%, $yellow 33%);
+      top: 25%;
+    }
+    @media (min-width: 1100px) {
+      top: 35%;
+    }
     svg {
       display: block;
     }
   }
   &__cards {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 2.25rem;
+    grid-template-columns: auto;
+    grid-gap: 1.25rem;
+    @media (min-width: 750px) {
+      grid-template-columns: auto auto;
+      grid-gap: 1.75rem;
+    }
+    @media (min-width: 1100px) {
+      grid-template-columns: auto auto auto;
+      grid-gap: 2.25rem;
+    }
   }
   &__intro {
     display: flex;
     align-items: center;
     flex-flow: column nowrap;
     text-align: center;
-    max-width: 50%;
+    max-width: 75%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 4rem;
+    @media (min-width: $breakpoint-30) {
+      max-width: 50%;
+    }
   }
   &__heading {
     color: black;
@@ -47,6 +66,10 @@
       background: $yellow;
       border-radius: $border-radius-full;
       z-index: -1;
+      display: none;
+      @media (min-width: 320px) {
+       display: block;
+      }
     }
   }
   &__text {

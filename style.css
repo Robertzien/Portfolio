@@ -14,9 +14,9 @@
     padding: 3rem 3rem;
   }
 }
-@media (min-width: 765px) {
+@media (min-width: 800px) {
   .container {
-    padding: 5rem 6rem;
+    padding: 5rem 5rem;
   }
 }
 @media (min-width: 1800px) {
@@ -40,27 +40,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 3.75rem;
 }
-@media (min-width: 765px) {
+@media (min-width: 800px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 4.25rem;
   }
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.75rem;
 }
-@media (min-width: 765px) {
+@media (min-width: 800px) {
   h2 {
-    font-size: 2.25rem;
+    font-size: 3.25rem;
   }
 }
 
 h3 {
   font-size: 1.875rem;
 }
-@media (min-width: 765px) {
+@media (min-width: 800px) {
   h3 {
     font-size: 2rem;
   }
@@ -69,27 +69,27 @@ h3 {
 h4 {
   font-size: 1.75rem;
 }
-@media (min-width: 765px) {
+@media (min-width: 800px) {
   h4 {
     font-size: 1.875rem;
   }
 }
 
 h5 {
-  font-size: 1.625rem;
+  font-size: 1.75rem;
 }
-@media (min-width: 765px) {
+@media (min-width: 800px) {
   h5 {
-    font-size: 1.75rem;
+    font-size: 1.875rem;
   }
 }
 
 h6 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
-@media (min-width: 765px) {
+@media (min-width: 800px) {
   h6 {
-    font-size: 1.625rem;
+    font-size: 1.875rem;
   }
 }
 
@@ -139,6 +139,7 @@ a {
 
 .header {
   background: #1C1E21;
+  position: relative;
 }
 .header .container {
   align-items: center;
@@ -195,13 +196,18 @@ a {
 }
 .hero__bottom {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: space-evenly;
 }
+@media (min-width: 940px) {
+  .hero__bottom {
+    flex-flow: row nowrap;
+  }
+}
 .hero__heading {
-  font-size: 4.25rem;
   position: relative;
   width: fit-content;
+  margin-bottom: 2rem;
 }
 .hero__heading:before {
   position: absolute;
@@ -213,9 +219,21 @@ a {
   background: #FFD233;
   border-radius: 999rem;
   z-index: -1;
+  display: none;
+}
+@media (min-width: 650px) {
+  .hero__heading:before {
+    display: block;
+  }
 }
 .hero__intro {
   margin-right: 1.85rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 940px) {
+  .hero__intro {
+    margin-bottom: 0;
+  }
 }
 .hero__text {
   font-size: 1.375rem;
@@ -226,6 +244,9 @@ a {
   justify-content: flex-end;
   flex-flow: column nowrap;
 }
+.hero__about-text {
+  max-width: 75%;
+}
 .hero__about-subheading {
   color: #FFD233;
 }
@@ -234,13 +255,20 @@ a {
   z-index: 2;
   justify-self: center;
   margin-right: 2.5rem;
+  width: fit-content;
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 940px) {
+  .hero__image {
+    margin-bottom: 0;
+  }
 }
 .hero__image:before {
   position: absolute;
-  bottom: -0.65rem;
-  right: -0.65rem;
   width: 75%;
   height: 75%;
+  bottom: -0.65rem;
+  right: -0.65rem;
   content: " ";
   background: #FFD233;
   z-index: -1;
@@ -248,15 +276,27 @@ a {
 }
 .hero__image img {
   object-fit: cover;
-  width: 400px;
-  height: 400px;
+  width: 330px;
+  height: 330px;
   border-radius: 0.5rem;
   box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.25);
   display: block;
 }
+@media (min-width: 1200px) {
+  .hero__image img {
+    width: 400px;
+    height: 400px;
+  }
+}
 
 .about {
   position: relative;
+  margin-bottom: 2rem;
+}
+@media (min-width: 480px) {
+  .about {
+    margin-bottom: 0;
+  }
 }
 .about .container {
   padding-top: 4rem;
@@ -267,7 +307,7 @@ a {
     padding-top: 8rem;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 940px) {
   .about .container {
     display: grid;
     padding-top: 6rem;
@@ -283,7 +323,7 @@ a {
 }
 .about__wave {
   position: absolute;
-  top: 0;
+  top: -1rem;
   left: 0;
   right: 0;
   z-index: -1;
@@ -297,12 +337,12 @@ a {
 .about__image {
   position: relative;
 }
-@media (min-width: 765px) {
+@media (min-width: 800px) {
   .about__image {
     margin: 0 2rem;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 940px) {
   .about__image {
     margin-left: 2rem;
     padding: 0;
@@ -332,7 +372,7 @@ a {
   margin-right: 0;
   margin-bottom: 5rem;
 }
-@media (min-width: 1000px) {
+@media (min-width: 940px) {
   .about__intro {
     margin-right: 2rem;
     margin-bottom: 0;
@@ -354,6 +394,12 @@ a {
   background: #FFD233;
   border-radius: 999rem;
   z-index: -1;
+  display: none;
+}
+@media (min-width: 320px) {
+  .about__heading:before {
+    display: block;
+  }
 }
 .about__text {
   color: black;
@@ -365,9 +411,9 @@ a {
   position: relative;
 }
 .footer .container {
-  flex-flow: row nowrap;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1.5rem;
   padding-top: 12rem;
   padding-bottom: 3rem;
 }
@@ -430,7 +476,7 @@ a {
 }
 .cards__background {
   position: absolute;
-  top: 35%;
+  top: 12.5%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -438,24 +484,53 @@ a {
   width: 100%;
   overflow: hidden;
   background-size: 100% 100%;
+  background: linear-gradient(180deg, white 5%, #FFD233 5%);
+}
+@media (min-width: 750px) {
+  .cards__background {
+    background: linear-gradient(180deg, white 33%, #FFD233 33%);
+    top: 25%;
+  }
+}
+@media (min-width: 1100px) {
+  .cards__background {
+    top: 35%;
+  }
 }
 .cards__background svg {
   display: block;
 }
 .cards__cards {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 2.25rem;
+  grid-template-columns: auto;
+  grid-gap: 1.25rem;
+}
+@media (min-width: 750px) {
+  .cards__cards {
+    grid-template-columns: auto auto;
+    grid-gap: 1.75rem;
+  }
+}
+@media (min-width: 1100px) {
+  .cards__cards {
+    grid-template-columns: auto auto auto;
+    grid-gap: 2.25rem;
+  }
 }
 .cards__intro {
   display: flex;
   align-items: center;
   flex-flow: column nowrap;
   text-align: center;
-  max-width: 50%;
+  max-width: 75%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 4rem;
+}
+@media (min-width: 940px) {
+  .cards__intro {
+    max-width: 50%;
+  }
 }
 .cards__heading {
   color: black;
@@ -472,6 +547,12 @@ a {
   background: #FFD233;
   border-radius: 999rem;
   z-index: -1;
+  display: none;
+}
+@media (min-width: 320px) {
+  .cards__heading:before {
+    display: block;
+  }
 }
 .cards__text {
   color: black;

@@ -2,9 +2,9 @@
   background: $lightblack;
   position: relative;
   .container {
-    flex-flow: row nowrap;
-    align-items: flex-start;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1.5rem;
     padding-top: 12rem;
     padding-bottom: 3rem;
   }

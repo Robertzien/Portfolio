@@ -1,5 +1,14 @@
 .header {
   background: $lightblack;
+  position: relative;
+  //&--mobile {
+  //  position: absolute;
+  //  z-index: 999;
+  //  top: 50%;
+  //  @media (min-width: $breakpoint-30) {
+  //    //display: none;
+  //  }
+  //}
   .container {
     align-items: center;
     flex-flow: row nowrap;
