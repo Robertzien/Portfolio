@@ -19,7 +19,7 @@
     padding: 5rem 5rem;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1700px) {
   .container {
     padding-left: 20%;
     padding-right: 20%;
@@ -114,6 +114,20 @@ a {
   text-decoration: none;
 }
 
+.wave {
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  overflow: hidden;
+  background-size: 100% 100%;
+}
+.wave svg {
+  display: block;
+}
+
 .button {
   background: #1C1E21;
   padding: 0.85rem 1.5rem;
@@ -156,6 +170,12 @@ a {
   position: fixed;
   right: 6rem;
   z-index: 999;
+  top: 1rem;
+}
+@media (min-width: 1700px) {
+  .header__nav {
+    right: 20%;
+  }
 }
 .header__nav-item {
   margin-right: 2rem;
@@ -167,8 +187,8 @@ a {
 .header__nav:before {
   position: absolute;
   top: -0.8rem;
-  left: -1.25rem;
-  right: -1.25rem;
+  left: -1rem;
+  right: -1rem;
   bottom: -0.8rem;
   background: #1C1E21;
   content: "";
@@ -329,19 +349,6 @@ a {
     grid-template-columns: 50% 50%;
   }
 }
-.about__wave {
-  position: absolute;
-  top: -1rem;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  width: 100%;
-  overflow: hidden;
-  background-size: 100% 100%;
-}
-.about__wave svg {
-  display: block;
-}
 .about__image {
   position: relative;
 }
@@ -422,9 +429,27 @@ a {
 }
 .footer .container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto;
   padding-top: 12rem;
   padding-bottom: 3rem;
+}
+@media (min-width: 750px) {
+  .footer .container {
+    grid-template-columns: auto auto;
+  }
+}
+@media (min-width: 1200px) {
+  .footer .container {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+.footer__column {
+  margin-bottom: 4rem;
+}
+@media (min-width: 1200px) {
+  .footer__column {
+    margin-bottom: 0;
+  }
 }
 .footer__wave {
   position: absolute;
@@ -445,7 +470,7 @@ a {
 .footer__heading {
   font-size: 1.25rem;
   font-weight: bold;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
 }
 .footer__text {
   font-size: 1.125rem;
@@ -607,7 +632,7 @@ a {
 .card__image img {
   width: 100%;
   object-fit: cover;
-  aspect-ratio: 5/4;
+  aspect-ratio: 3/2;
   border-radius: 0.5rem;
   box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.25);
 }

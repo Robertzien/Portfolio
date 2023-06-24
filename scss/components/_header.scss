@@ -16,6 +16,10 @@
     position: fixed;
     right: 6rem;
     z-index: 999;
+    top: 1rem;
+    @media (min-width: 1700px) {
+      right: 20%;
+    }
     &-item {
       margin-right: 2rem;
       margin-bottom: 0;
@@ -26,8 +30,8 @@
     &:before {
       position: absolute;
       top: -.8rem;
-      left: -1.25rem;
-      right: -1.25rem;
+      left: -1rem;
+      right: -1rem;
       bottom: -.8rem;
       background: $lightblack;
       content: "";

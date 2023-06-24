@@ -13,7 +13,7 @@
   @media (min-width: $breakpoint-20) {
     padding: 5rem 5rem;
   };
-  @media (min-width: 1800px) {
+  @media (min-width: 1700px) {
     padding-left: 20%;
     padding-right: 20%;
   }
@@ -93,4 +93,18 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.wave {
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  overflow: hidden;
+  background-size: 100% 100%;
+  svg {
+    display: block;
+  }
 }

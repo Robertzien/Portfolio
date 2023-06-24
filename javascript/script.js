@@ -1,37 +1,37 @@
 const cardData = [
     {
         imageUrl: 'https://images.pexels.com/photos/3589903/pexels-photo-3589903.jpeg?auto=compress&cs=tinysrgb&w=600',
-        languages: ['html', 'CSS', 'Javascript'],
+        languages: ['HTML', 'CSS', 'Javascript'],
         heading: 'Lorem ipsum',
         text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laudantium pariatur provident soluta vero? Aperiam corporis cumque dignissimos, dolorem facere.',
     },
     {
         imageUrl: 'https://images.pexels.com/photos/3589903/pexels-photo-3589903.jpeg?auto=compress&cs=tinysrgb&w=600',
-        languages: ['html', 'CSS', 'Javascript'],
+        languages: ['HTML', 'CSS', 'Javascript'],
         heading: 'Lorem ipsum',
         text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laudantium pariatur provident soluta vero? Aperiam corporis cumque dignissimos, dolorem facere.',
     },
     {
         imageUrl: 'https://images.pexels.com/photos/3589903/pexels-photo-3589903.jpeg?auto=compress&cs=tinysrgb&w=600',
-        languages: ['html', 'CSS', 'Javascript'],
+        languages: ['HTML', 'CSS', 'Javascript'],
         heading: 'Lorem ipsum',
         text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laudantium pariatur provident soluta vero? Aperiam corporis cumque dignissimos, dolorem facere.',
     },
     {
         imageUrl: 'https://images.pexels.com/photos/3589903/pexels-photo-3589903.jpeg?auto=compress&cs=tinysrgb&w=600',
-        languages: ['html', 'CSS', 'Javascript'],
+        languages: ['HTML', 'CSS', 'Javascript'],
         heading: 'Lorem ipsum',
         text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laudantium pariatur provident soluta vero? Aperiam corporis cumque dignissimos, dolorem facere.',
     },
     {
         imageUrl: 'https://images.pexels.com/photos/3589903/pexels-photo-3589903.jpeg?auto=compress&cs=tinysrgb&w=600',
-        languages: ['html', 'CSS', 'Javascript'],
+        languages: ['HTML', 'CSS', 'Javascript'],
         heading: 'Lorem ipsum',
         text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laudantium pariatur provident soluta vero? Aperiam corporis cumque dignissimos, dolorem facere.',
     },
     {
         imageUrl: 'https://images.pexels.com/photos/3589903/pexels-photo-3589903.jpeg?auto=compress&cs=tinysrgb&w=600',
-        languages: ['html', 'CSS', 'Javascript'],
+        languages: ['HTML', 'CSS', 'Javascript'],
         heading: 'Lorem ipsum',
         text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laudantium pariatur provident soluta vero? Aperiam corporis cumque dignissimos, dolorem facere.',
     },
@@ -40,7 +40,7 @@ const cardData = [
 const cardContainer = document.getElementById('cardContainer');
 
 cardData.forEach( card => {
-    const cardHtml = `
+    const cardHTML = `
       <a class="card" href="#">
         <div class="card__image">
           <picture>
@@ -59,7 +59,7 @@ cardData.forEach( card => {
         </div>
       </a>
     `
-    cardContainer.innerHTML += cardHtml;
+    cardContainer.innerHTML += cardHTML;
 });
 
 function generateFooter() {
@@ -71,7 +71,7 @@ function generateFooter() {
             </svg>
         </div>
         <div class="container">
-            <div class="footer__about">
+            <div class=" footer__column footer__about">
                 <svg width="43" height="63" viewBox="0 0 43 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M34.9579 44.2286L23.3199 25.4309C21.9895 25.4309 19.8861 25.3315 17.0096 25.1327L17.0096 44.2286H11.0571L11.0571 0.448546C11.2744 0.448546 12.8169 0.373993 15.6847 0.224889C18.5526 0.0757845 20.6415 0.000821512 21.9514 0C32.4278 0 37.666 4.18396 37.666 12.5519C37.6854 15.2434 36.7935 17.8617 35.1365 19.9775C33.6824 22.0218 31.5502 23.4788 29.1227 24.0872L41.7714 44.2286H34.9579ZM17.0096 5.8274V20.0521C18.3902 20.2483 19.7827 20.3483 21.177 20.3515C24.7485 20.3515 27.3475 19.7736 28.9742 18.6177C30.6008 17.4619 31.4145 15.4001 31.4153 12.4324C31.4153 9.98137 30.5425 8.218 28.7968 7.14223C27.0511 6.06646 24.2927 5.52837 20.5216 5.52796C19.9268 5.52796 18.7563 5.62777 17.0102 5.8274" fill="#FFD233"/>
                     <path d="M9.27416 45.6342L18.516 59.7412L13.8786 62.6571L0 41.4732L1.36595 40.6132L34.0562 40.4806L24.7354 26.2587L29.3728 23.3428L43 44.1446L41.5279 45.0704L9.27416 45.6342Z" fill="#FFD233"/>
@@ -80,7 +80,7 @@ function generateFooter() {
                     Website gemaakt door Robert Ziengs ;)
                 </div>
             </div>
-            <div class="footer__contact">
+            <div class="footer__column footer__contact">
                 <div class="footer__heading">
                     Contact
                 </div>
@@ -116,7 +116,7 @@ function generateFooter() {
                     </a>
                 </div>
             </div>
-            <div class="footer__menu">
+            <div class="footer__column footer__menu">
                 <div class="footer__heading">
                     Menu
                 </div>
@@ -131,14 +131,9 @@ function generateFooter() {
                             Mijn werk
                         </a>
                     </li>
-                    <li class="footer__item">
-                        <a class="footer__text" href="#">
-                            Contact
-                        </a>
-                    </li>
                 </ul>
             </div>
-            <div class="footer__back-to-top">
+            <div class="footer__column footer__back-to-top">
                 <div>
                     Terug naar boven
                 </div>
@@ -155,8 +150,8 @@ function generateFooter() {
 
 function appendFooter() {
     let footerContainer = document.createElement('div');
-    let footerHtml = generateFooter();
-    footerContainer.innerHTML = footerHtml;
+    let footerHTML = generateFooter();
+    footerContainer.innerHTML = footerHTML;
     let footerContainerElement = document.getElementById('footerContainer');
     if (footerContainerElement) {
         footerContainerElement.appendChild(footerContainer);

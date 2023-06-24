@@ -21,19 +21,6 @@
       grid-template-columns: 50% 50%;
     }
   }
-  &__wave {
-    position: absolute;
-    top: -1rem;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    width: 100%;
-    overflow: hidden;
-    background-size: 100% 100%;
-    svg {
-      display: block;
-    }
-  }
   &__image {
     position: relative;
     @media (min-width: $breakpoint-20) {
