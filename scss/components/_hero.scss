@@ -33,21 +33,6 @@
     position: relative;
     width: fit-content;
     margin-bottom: 2rem;
-    &:before {
-      position: absolute;
-      content: "";
-      top: 1.25rem;
-      bottom: 1.25rem;
-      left: 0;
-      right: 52%;
-      background: $yellow;
-      border-radius: $border-radius-full;
-      z-index: -1;
-      display: none;
-      @media (min-width: 650px) {
-        display: block;
-      }
-    }
   }
   &__intro {
     margin-right: 1.85rem;
@@ -58,7 +43,7 @@
   }
   &__text {
     font-size: $font-size-50;
-    font-weight: 300;
+    font-weight: 200;
   }
   &__about {
     display: flex;
@@ -66,10 +51,11 @@
     flex-flow: column nowrap;
     &-text {
       max-width: 75%;
-
     }
     &-subheading {
       color: $yellow;
+      font-weight: 400;
+      font-size: $font-size-40;
     }
   }
   &__image {
@@ -95,11 +81,15 @@
     }
     img {
       object-fit: cover;
-      width: 330px;
-      height: 330px;
       border-radius: $border-radius-20;
       box-shadow: $box-shadow;
       display: block;
+      width: 275px;
+      height: 275px;
+      @media (min-width: 375px) {
+        width: 330px;
+        height: 330px;
+      }
       @media (min-width: $breakpoint-40) {
         width: 400px;
         height: 400px;

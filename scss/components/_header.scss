@@ -1,26 +1,21 @@
 .header {
   background: $lightblack;
-  position: relative;
-  //&--mobile {
-  //  position: absolute;
-  //  z-index: 999;
-  //  top: 50%;
-  //  @media (min-width: $breakpoint-30) {
-  //    //display: none;
-  //  }
-  //}
+  z-index: 998;
   .container {
     align-items: center;
     flex-flow: row nowrap;
     justify-content: space-between;
-    padding-bottom: 0;
-    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
   }
   &__nav {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     list-style: none;
+    position: fixed;
+    right: 6rem;
+    z-index: 999;
     &-item {
       margin-right: 2rem;
       margin-bottom: 0;
@@ -28,12 +23,26 @@
         margin-right: 0;
       }
     }
+    &:before {
+      position: absolute;
+      top: -.8rem;
+      left: -1.25rem;
+      right: -1.25rem;
+      bottom: -.8rem;
+      background: $lightblack;
+      content: "";
+      border-radius: $border-radius-full;
+      box-shadow: $box-shadow-10;
+    }
     &-link {
       font-size: $font-size-30;
       position: relative;
       z-index: 1;
       &:hover {
         cursor: pointer;
+      }
+      svg {
+        display: block;
       }
     }
   }

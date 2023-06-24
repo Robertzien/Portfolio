@@ -67,7 +67,7 @@
       border-radius: $border-radius-full;
       z-index: -1;
       display: none;
-      @media (min-width: 320px) {
+      @media (min-width: 345px) {
        display: block;
       }
     }
