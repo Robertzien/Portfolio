@@ -83,9 +83,14 @@
   box-shadow: $box-shadow;
   border-radius: $border-radius-20;
   background: white;
-  transition: .2s;
+  transition: ease-in-out .2s;
+  overflow: hidden;
   &:hover {
     box-shadow: $box-shadow-hover;
+  }
+  &:hover img {
+    filter: none;
+    -webkit-filter: grayscale(0);
   }
   &__content {
     margin-bottom: 3.5rem;
@@ -118,6 +123,9 @@
       aspect-ratio: 3/2;
       border-radius: $border-radius-20;
       box-shadow: $box-shadow;
+      transition: ease-in-out .2s;
+      filter: 75%;
+      -webkit-filter: grayscale(75%);
     }
   }
   &__button-bar {

@@ -1,6 +1,6 @@
 .button {
   background: $lightblack;
-  padding: .85rem 1.5rem;
+  padding: .85rem 1.55rem;
   border-radius: $border-radius-full;
   box-shadow: $box-shadow;
   width: fit-content;
@@ -8,10 +8,27 @@
   flex-flow: row nowrap;
   align-items: center;
   font-weight: bold;
-  transition: .2s;
+  transition: ease-in-out .2s;
+  position: relative;
   &:hover {
-    background: darken($lightblack, .5);
+    background: $lightblack;
     box-shadow: $box-shadow-hover;
+  }
+  &:hover:before {
+    display: block;
+    opacity: 1;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    right: -4px;
+    left: -4px;
+    border: solid 2px $lightblack;
+    border-radius: $border-radius-full;
+    opacity: 0;
+    transition: ease-in-out .2s;
   }
   svg {
     display: block;

@@ -130,7 +130,7 @@ a {
 
 .button {
   background: #1C1E21;
-  padding: 0.85rem 1.5rem;
+  padding: 0.85rem 1.55rem;
   border-radius: 999rem;
   box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.25);
   width: fit-content;
@@ -138,11 +138,28 @@ a {
   flex-flow: row nowrap;
   align-items: center;
   font-weight: bold;
-  transition: 0.2s;
+  transition: ease-in-out 0.2s;
+  position: relative;
 }
 .button:hover {
-  background: #1b1d20;
+  background: #1C1E21;
   box-shadow: 0 7px 14px rgba(0, 0, 0, 0.35);
+}
+.button:hover:before {
+  display: block;
+  opacity: 1;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  right: -4px;
+  left: -4px;
+  border: solid 2px #1C1E21;
+  border-radius: 999rem;
+  opacity: 0;
+  transition: ease-in-out 0.2s;
 }
 .button svg {
   display: block;
@@ -599,10 +616,15 @@ a {
   box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.25);
   border-radius: 0.5rem;
   background: white;
-  transition: 0.2s;
+  transition: ease-in-out 0.2s;
+  overflow: hidden;
 }
 .card:hover {
   box-shadow: 0 7px 14px rgba(0, 0, 0, 0.35);
+}
+.card:hover img {
+  filter: none;
+  -webkit-filter: grayscale(0);
 }
 .card__content {
   margin-bottom: 3.5rem;
@@ -636,6 +658,9 @@ a {
   aspect-ratio: 3/2;
   border-radius: 0.5rem;
   box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.25);
+  transition: ease-in-out 0.2s;
+  filter: 75%;
+  -webkit-filter: grayscale(75%);
 }
 .card__button-bar {
   position: relative;

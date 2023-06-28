@@ -1,21 +1,21 @@
 const cardData = [
     {
-        imageUrl: 'https://images.pexels.com/photos/3589903/pexels-photo-3589903.jpeg?auto=compress&cs=tinysrgb&w=600',
-        languages: ['HTML', 'CSS', 'Javascript'],
-        heading: 'Lorem ipsum',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laudantium pariatur provident soluta vero? Aperiam corporis cumque dignissimos, dolorem facere.',
+        imageUrl: 'images/Pokedex.PNG',
+        languages: ['Vue.js', 'SCSS'],
+        heading: 'Pokedex',
+        text: 'Mijn eerste ervaring met Vue.js en het gebruiken van een API, namelijk PokeAPI. Op de website kan je switchen tussen meerdere generaties en kan je kiezen hoeveel Pokemon je wil zien.',
     },
     {
-        imageUrl: 'https://images.pexels.com/photos/3589903/pexels-photo-3589903.jpeg?auto=compress&cs=tinysrgb&w=600',
-        languages: ['HTML', 'CSS', 'Javascript'],
-        heading: 'Lorem ipsum',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laudantium pariatur provident soluta vero? Aperiam corporis cumque dignissimos, dolorem facere.',
+        imageUrl: 'images/Portfolio.PNG',
+        languages: ['HTML', 'SCSS', 'Javascript'],
+        heading: 'Portfolio',
+        text: 'Voor mijn portfoliowebsite ben ik voor een speelse maar toch overzichtelijke stijl gegaan. Ook was het een oefening voor mij om beter te worden in Javascript en SCSS.',
     },
     {
-        imageUrl: 'https://images.pexels.com/photos/3589903/pexels-photo-3589903.jpeg?auto=compress&cs=tinysrgb&w=600',
+        imageUrl: 'images/RPS.PNG',
         languages: ['HTML', 'CSS', 'Javascript'],
-        heading: 'Lorem ipsum',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laudantium pariatur provident soluta vero? Aperiam corporis cumque dignissimos, dolorem facere.',
+        heading: 'Rock, Paper, Scissors',
+        text: 'Op deze website kan je steen, papier, schaar spelen door middel van de console. De website heb ik gemaakt als een oefening voor het werken met Javascript. Vervolgens heb ik de website nog gestyled met CSS en HTML.',
     },
     {
         imageUrl: 'https://images.pexels.com/photos/3589903/pexels-photo-3589903.jpeg?auto=compress&cs=tinysrgb&w=600',
