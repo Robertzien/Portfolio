@@ -7,13 +7,13 @@ const cardData = [
     },
     {
         imageUrl: 'images/Portfolio.PNG',
-        languages: ['HTML', 'SCSS', 'Javascript'],
+        languages: ['HTML', 'SCSS', 'JavaScript'],
         heading: 'Portfolio',
-        text: 'Voor mijn portfoliowebsite ben ik voor een speelse maar toch overzichtelijke stijl gegaan. Ook was het een oefening voor mij om beter te worden in Javascript en SCSS.',
+        text: 'Voor deze portfoliowebsite ben ik voor een speelse maar toch overzichtelijke stijl gegaan. Ook was het een oefening voor mij om beter te worden in Javascript en SCSS.',
     },
     {
         imageUrl: 'images/RPS.PNG',
-        languages: ['HTML', 'CSS', 'Javascript'],
+        languages: ['HTML', 'CSS', 'JavaScript'],
         heading: 'Rock, Paper, Scissors',
         text: 'Op deze website kan je steen, papier, schaar spelen door middel van de console. De website heb ik gemaakt als een oefening voor het werken met Javascript. Vervolgens heb ik de website nog gestyled met CSS en HTML.',
     },
