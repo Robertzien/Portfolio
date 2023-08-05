@@ -219,6 +219,7 @@ a {
 }
 .header__nav-link:hover {
   cursor: pointer;
+  color: #FFD233;
 }
 .header__nav-link svg {
   display: block;

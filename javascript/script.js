@@ -4,6 +4,7 @@ const cardData = [
         languages: ['Vue.js', 'SCSS'],
         heading: 'Pokedex',
         text: 'Mijn eerste ervaring met Vue.js en het gebruiken van een API, namelijk PokeAPI. Op de website kan je switchen tussen meerdere generaties en kan je kiezen hoeveel Pokemon je wil zien.',
+        link: 'https://robertzien.github.io/Poke-dex/'
     },
     {
         imageUrl: 'images/Portfolio.PNG',
@@ -16,24 +17,14 @@ const cardData = [
         languages: ['HTML', 'CSS', 'JavaScript'],
         heading: 'Rock, Paper, Scissors',
         text: 'Op deze website kan je steen, papier, schaar spelen door middel van de console. De website heb ik gemaakt als een oefening voor het werken met Javascript. Vervolgens heb ik de website nog gestyled met CSS en HTML.',
+        link: 'https://robertzien.github.io/practice_2/'
     },
     {
-        imageUrl: 'https://images.pexels.com/photos/3589903/pexels-photo-3589903.jpeg?auto=compress&cs=tinysrgb&w=600',
-        languages: ['HTML', 'CSS', 'Javascript'],
-        heading: 'Lorem ipsum',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laudantium pariatur provident soluta vero? Aperiam corporis cumque dignissimos, dolorem facere.',
-    },
-    {
-        imageUrl: 'https://images.pexels.com/photos/3589903/pexels-photo-3589903.jpeg?auto=compress&cs=tinysrgb&w=600',
-        languages: ['HTML', 'CSS', 'Javascript'],
-        heading: 'Lorem ipsum',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laudantium pariatur provident soluta vero? Aperiam corporis cumque dignissimos, dolorem facere.',
-    },
-    {
-        imageUrl: 'https://images.pexels.com/photos/3589903/pexels-photo-3589903.jpeg?auto=compress&cs=tinysrgb&w=600',
-        languages: ['HTML', 'CSS', 'Javascript'],
-        heading: 'Lorem ipsum',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias laudantium pariatur provident soluta vero? Aperiam corporis cumque dignissimos, dolorem facere.',
+        imageUrl: 'images/Wheelz.png',
+        languages: ['HTML', 'CSS'],
+        heading: 'Wheelz',
+        text: 'Gemaakt voor een project waarbij we deelmobiliteit op het platteland aantrekkelijker moesten maken. Daarvoor hebben we een nieuw concept bedacht: Wheelz.',
+        link: 'https://robertzien.github.io/wheelz/'
     },
 ];
 
@@ -41,7 +32,7 @@ const cardContainer = document.getElementById('cardContainer');
 
 cardData.forEach( card => {
     const cardHTML = `
-      <a class="card" href="#">
+      <a class="card" href="${card.link}">
         <div class="card__image">
           <picture>
             <img src="${card.imageUrl}" alt="">
@@ -133,7 +124,7 @@ function generateFooter() {
                     </li>
                 </ul>
             </div>
-            <div class="footer__column footer__back-to-top">
+            <div id="backtotop" class="footer__column footer__back-to-top">
                 <div>
                     Terug naar boven
                 </div>
