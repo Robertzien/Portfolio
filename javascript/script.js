@@ -11,13 +11,14 @@ const cardData = [
         languages: ['HTML', 'SCSS', 'JavaScript'],
         heading: 'Portfolio',
         text: 'Voor deze portfoliowebsite ben ik voor een speelse maar toch overzichtelijke stijl gegaan. Ook was het een oefening voor mij om beter te worden in Javascript en SCSS.',
+        link: 'https://robertzien.github.io/Portfolio/'
     },
     {
         imageUrl: 'images/RPS.PNG',
         languages: ['HTML', 'CSS', 'JavaScript'],
         heading: 'Rock, Paper, Scissors',
         text: 'Op deze website kan je steen, papier, schaar spelen door middel van de console. De website heb ik gemaakt als een oefening voor het werken met Javascript. Vervolgens heb ik de website nog gestyled met CSS en HTML.',
-        link: 'https://robertzien.github.io/practice_2/'
+        link: 'https://robertzien.github.io/Rock-Paper-Scissors/'
     },
     {
         imageUrl: 'images/Wheelz.png',
