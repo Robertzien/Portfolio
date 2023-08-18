@@ -7,7 +7,7 @@ const cardData = [
         link: 'https://robertzien.github.io/Poke-dex/'
     },
     {
-        imageUrl: 'images/Portfolio.PNG',
+        imageUrl: 'images/test.PNG',
         languages: ['HTML', 'SCSS', 'JavaScript'],
         heading: 'Portfolio',
         text: 'Voor deze portfoliowebsite ben ik voor een speelse maar toch overzichtelijke stijl gegaan. Ook was het een oefening voor mij om beter te worden in Javascript en SCSS.',
