@@ -36,4 +36,11 @@
   div {
     margin-right: .75rem;
   }
+  &--yellow {
+    background: $yellow;
+    color: $lightblack;
+    &:hover {
+      color: white;
+    }
+  }
 }
