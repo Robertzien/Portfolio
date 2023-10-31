@@ -7,13 +7,6 @@ const cardData = [
         link: 'https://robertzien.github.io/Poke-dex/'
     },
     {
-        imageUrl: 'images/test.PNG',
-        languages: ['HTML', 'SCSS', 'JavaScript'],
-        heading: 'Portfolio',
-        text: 'Voor deze portfoliowebsite ben ik voor een speelse maar toch overzichtelijke stijl gegaan. Ook was het een oefening voor mij om beter te worden in Javascript en SCSS.',
-        link: 'https://robertzien.github.io/Portfolio/'
-    },
-    {
         imageUrl: 'images/RPS.PNG',
         languages: ['HTML', 'CSS', 'JavaScript'],
         heading: 'Rock, Paper, Scissors',
@@ -21,11 +14,25 @@ const cardData = [
         link: 'https://robertzien.github.io/Rock-Paper-Scissors/'
     },
     {
+        imageUrl: 'images/Log-in.PNG',
+        languages: ['HTML', 'CSS', 'JavaScript'],
+        heading: 'Log in',
+        text: 'Een simpel concept voor een log-in form om te oefenen met HTML, CSS en Javascript.',
+        link: 'https://robertzien.github.io/Log-in/'
+    },
+    {
         imageUrl: 'images/Wheelz.png',
         languages: ['HTML', 'CSS'],
         heading: 'Wheelz',
         text: 'Gemaakt voor een project waarbij we deelmobiliteit op het platteland aantrekkelijker moesten maken. Daarvoor hebben we een nieuw concept bedacht: Wheelz.',
         link: 'https://robertzien.github.io/wheelz/'
+    },
+    {
+        imageUrl: 'images/test.PNG',
+        languages: ['HTML', 'SCSS', 'JavaScript'],
+        heading: 'Portfolio',
+        text: 'Voor deze portfoliowebsite ben ik voor een speelse maar toch overzichtelijke stijl gegaan. Ook was het een oefening voor mij om beter te worden in Javascript en SCSS.',
+        link: 'https://robertzien.github.io/Portfolio/'
     },
 ];
 
