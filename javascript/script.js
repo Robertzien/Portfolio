@@ -41,17 +41,17 @@ const cardContainer = document.getElementById('cardContainer');
 cardData.forEach( card => {
     const cardHTML = `
       <a class="card" href="${card.link}">
-        <div class="card__image">
-          <picture>
-            <img src="${card.imageUrl}" alt="">
-          </picture>
-        </div>
         <div class="card__content">
-          <div class="card__languages">
-            ${card.languages.map(language => `<div class="card__language">${language}</div>`).join('')}
-          </div>
-          <h6 class="card__heading">${card.heading}</h6>
-          <div class="card__text">${card.text}</div>
+            <div class="card__image">
+            <picture>
+                <img src="${card.imageUrl}" alt="">
+            </picture>
+            </div>
+            <div class="card__languages">
+                ${card.languages.map(language => `<div class="card__language">${language}</div>`).join('')}
+            </div>
+            <h6 class="card__heading">${card.heading}</h6>
+            <div class="card__text">${card.text}</div>
         </div>
         <div class="card__button-bar">
           <div class="card__button">Bekijk dit project</div>

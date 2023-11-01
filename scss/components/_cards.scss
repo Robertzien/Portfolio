@@ -79,6 +79,9 @@
 }
 
 .card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
   padding: 1.25rem;
   box-shadow: $box-shadow;
   border-radius: $border-radius-20;
