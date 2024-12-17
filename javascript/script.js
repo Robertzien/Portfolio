@@ -1,5 +1,12 @@
 const cardData = [
     {
+        imageUrl: 'images/TVDiever.PNG',
+        languages: ['WordPress', 'HTML', 'SCSS'],
+        heading: 'Tennisvereniging Diever',
+        text: 'Tijdens mijn stage bij Pienter Online Marketing in Assen heb ik gewerkt aan een nieuwe website voor tennisvereniging Diever. Zelf heb ik de hero en blogsectie ontworpen en ontwikkeld. Ik vernieuwde de navigatie  en creëerde nieuwe pagina’s met bestaande elementen in de WordPress-omgeving.',
+        link: 'https://tvdiever.nl/'
+    },
+    {
         imageUrl: 'images/Pokedex.PNG',
         languages: ['Vue.js', 'SCSS'],
         heading: 'Pokedex',
