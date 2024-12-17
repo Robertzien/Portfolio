@@ -1,6 +1,11 @@
 .header {
   background: $lightblack;
   z-index: 998;
+  position: relative;
+  &__toggle {
+    position: absolute;
+    right: 2rem;
+  }
   .container {
     align-items: center;
     flex-flow: row nowrap;
@@ -19,6 +24,9 @@
     top: 1rem;
     @media (min-width: 1700px) {
       right: 20%;
+    }
+    &--invisible {
+      display: none;
     }
     &-item {
       margin-right: 2rem;

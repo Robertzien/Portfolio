@@ -158,3 +158,13 @@ function appendFooter() {
 }
 
 appendFooter();
+
+let menu = document.getElementById('header__nav');
+let toggleButton = document.getElementById('header__toggle')
+
+function toggleMenu() {
+    console.log('hi');
+    menu.classList.toggle('header__nav--invisible');
+}
+
+toggleButton.addEventListener('click', toggleMenu);

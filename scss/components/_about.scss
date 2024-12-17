@@ -46,9 +46,9 @@
     img {
       display: block;
       width: 100%;
-      height: 100%;
+      height: 35rem;
       object-fit: cover;
-      aspect-ratio: 4/3;
+      aspect-ratio: 9/16;
       border-radius: $border-radius-20;
       box-shadow: $box-shadow;
     }
@@ -57,7 +57,7 @@
     margin-right: 0;
     margin-bottom: 5rem;
     @media (min-width: $breakpoint-30) {
-      margin-right: 2rem;
+      margin-right: 4rem;
       margin-bottom: 0;
     }
   }

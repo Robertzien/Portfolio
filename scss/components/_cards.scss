@@ -91,10 +91,6 @@
   &:hover {
     box-shadow: $box-shadow-hover;
   }
-  &:hover img {
-    filter: none;
-    -webkit-filter: grayscale(0);
-  }
   &__content {
     margin-bottom: 3.5rem;
   }
@@ -127,8 +123,6 @@
       border-radius: $border-radius-20;
       box-shadow: $box-shadow;
       transition: ease-in-out .2s;
-      filter: 75%;
-      -webkit-filter: grayscale(75%);
     }
   }
   &__button-bar {
