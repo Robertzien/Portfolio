@@ -2,7 +2,7 @@ const cardData = [
     {
         imageUrl: 'images/TVDiever.PNG',
         languages: ['WordPress', 'HTML', 'SCSS'],
-        heading: 'Tennisvereniging Diever',
+        heading: 'TV Diever',
         text: 'Tijdens mijn stage bij Pienter Online Marketing in Assen heb ik gewerkt aan een nieuwe website voor tennisvereniging Diever. Zelf heb ik de hero en blogsectie ontworpen en ontwikkeld. Ik vernieuwde de navigatie  en creëerde nieuwe pagina’s met bestaande elementen in de WordPress-omgeving.',
         link: 'https://tvdiever.nl/'
     },
@@ -12,6 +12,13 @@ const cardData = [
         heading: 'Pokedex',
         text: 'Mijn eerste ervaring met Vue.js en het gebruiken van een API, namelijk PokeAPI. Op de website kan je switchen tussen meerdere generaties en kan je kiezen hoeveel Pokemon je wil zien.',
         link: 'https://robertzien.github.io/Poke-dex/'
+    },
+    {
+        imageUrl: 'images/Woods.PNG',
+        languages: ['HTML', 'SCSS', 'JavaScript'],
+        heading: 'Woods',
+        text: 'Een zelf bedacht concept waarmee je meer kan leren over de bossen op aarde. In de interactieve wereldkaart kan je bossen vinden van over de hele wereld. <br> <br> Deze website is nog een work-in-progress.',
+        link: 'https://robertzien.github.io/Woods/'
     },
     {
         imageUrl: 'images/RPS.PNG',
@@ -33,13 +40,6 @@ const cardData = [
         heading: 'Wheelz',
         text: 'Gemaakt voor een project waarbij we deelmobiliteit op het platteland aantrekkelijker moesten maken. Daarvoor hebben we een nieuw concept bedacht: Wheelz.',
         link: 'https://robertzien.github.io/wheelz/'
-    },
-    {
-        imageUrl: 'images/test.PNG',
-        languages: ['HTML', 'SCSS', 'JavaScript'],
-        heading: 'Portfolio',
-        text: 'Voor deze portfoliowebsite ben ik voor een speelse maar toch overzichtelijke stijl gegaan. Ook was het een oefening voor mij om beter te worden in Javascript en SCSS.',
-        link: 'https://robertzien.github.io/Portfolio/'
     },
 ];
 
