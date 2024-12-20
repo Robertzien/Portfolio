@@ -475,6 +475,7 @@ a {
 .footer {
   background: #1C1E21;
   position: relative;
+  z-index: 999;
 }
 .footer .container {
   display: grid;
@@ -505,7 +506,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: -1;
   width: 100%;
   overflow: hidden;
   background-size: 100% 100%;
