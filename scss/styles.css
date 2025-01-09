@@ -169,7 +169,7 @@ a {
   margin-right: 0.75rem;
 }
 .button--yellow {
-  background: #FFD233;
+  background: #FFB71C;
   color: #1C1E21;
 }
 .button--yellow:hover {
@@ -241,7 +241,7 @@ a {
 }
 .header__nav-link:hover {
   cursor: pointer;
-  color: #FFD233;
+  color: #FFB71C;
 }
 .header__nav-link svg {
   display: block;
@@ -310,7 +310,7 @@ a {
   max-width: 75%;
 }
 .hero__about-subheading {
-  color: #FFD233;
+  color: #FFB71C;
   font-weight: 400;
   font-size: 1.25rem;
 }
@@ -338,7 +338,7 @@ a {
   bottom: -0.65rem;
   right: -0.65rem;
   content: " ";
-  background: #FFD233;
+  background: #FFB71C;
   z-index: -1;
   border-radius: 0.5rem;
 }
@@ -419,7 +419,7 @@ a {
   width: 75%;
   height: 75%;
   content: " ";
-  background: #FFD233;
+  background: #FFB71C;
   z-index: -1;
   border-radius: 0.5rem;
 }
@@ -457,7 +457,7 @@ a {
   top: 65%;
   right: 0;
   left: 0;
-  background: #FFD233;
+  background: #FFB71C;
   border-radius: 999rem;
   z-index: -1;
   display: none;
@@ -568,11 +568,11 @@ a {
   width: 100%;
   overflow: hidden;
   background-size: 100% 100%;
-  background: linear-gradient(180deg, white 5%, #FFD233 5%);
+  background: linear-gradient(180deg, white 5%, #FFB71C 5%);
 }
 @media (min-width: 750px) {
   .cards__background {
-    background: linear-gradient(180deg, white 33%, #FFD233 33%);
+    background: linear-gradient(180deg, white 33%, #FFB71C 33%);
     top: 25%;
   }
 }
@@ -629,7 +629,7 @@ a {
   top: 65%;
   right: 0;
   left: 0;
-  background: #FFD233;
+  background: #FFB71C;
   border-radius: 999rem;
   z-index: -1;
   display: none;
