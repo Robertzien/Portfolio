@@ -171,7 +171,7 @@ let toggleButton = document.getElementById('header__toggle')
 
 function toggleMenu() {
     console.log('hi');
-    menu.classList.toggle('header__nav--invisible');
+    menu.classList.toggle('header__nav--visible');
 }
 
 toggleButton.addEventListener('click', toggleMenu);

@@ -18,23 +18,34 @@
     padding-top: 1rem;
   }
   &__nav {
-    display: flex;
-    flex-flow: row nowrap;
+    display: none;
+    flex-flow: column nowrap;
     align-items: center;
     list-style: none;
     position: fixed;
-    right: 6rem;
+    right: 0;
     z-index: 999;
-    top: 1rem;
+    top: 4rem;
+    right: 3rem;
+    @media (min-width: $breakpoint-20) {
+      display: flex;
+      flex-flow: row nowrap;
+      right: 6rem;
+      top: 1rem;
+    }
     @media (min-width: 1700px) {
       right: 20%;
     }
-    &--invisible {
-      display: none;
+    &--visible {
+      display: flex;
     }
     &-item {
-      margin-right: 2rem;
-      margin-bottom: 0;
+      margin-right: 0;
+      margin-bottom: 1rem;
+      @media (min-width: $breakpoint-20) {
+        margin-right: 2rem;
+        margin-bottom: 0;
+      }
       &:last-child {
         margin-right: 0;
       }
@@ -47,8 +58,11 @@
       bottom: -.8rem;
       background: $lightblack;
       content: "";
-      border-radius: $border-radius-full;
+      border-radius: 1rem;
       box-shadow: $box-shadow-10;
+      @media (min-width: $breakpoint-20) {
+        border-radius: $border-radius-full;
+      }
     }
     &-link {
       font-size: $font-size-30;
