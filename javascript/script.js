@@ -14,6 +14,13 @@ const cardData = [
         link: 'https://robertzien.github.io/Poke-dex/'
     },
     {
+        imageUrl: 'images/ReHeat.PNG',
+        languages: ['HTML', 'SCSS'],
+        heading: 'ReHeat Redesign',
+        text: 'Een redesign van de website van ReHeat, gemaakt voor een schoolopdracht. Het design is bedacht door een medestudent en is door mij verder uitgewerkt met HTML en SCSS. De website bevat uitgebreide informatie en een uitlegvideo over zonneboilers. ',
+        link: 'https://robertzien.github.io/ReHeat/index.html#'
+    },
+    {
         imageUrl: 'images/Woods.PNG',
         languages: ['HTML', 'SCSS', 'JavaScript'],
         heading: 'Woods',
@@ -33,13 +40,6 @@ const cardData = [
         heading: 'Log in',
         text: 'Een simpel concept voor een log-in form om te oefenen met HTML, CSS en Javascript.',
         link: 'https://robertzien.github.io/Log-in/'
-    },
-    {
-        imageUrl: 'images/Wheelz.png',
-        languages: ['HTML', 'CSS'],
-        heading: 'Wheelz',
-        text: 'Gemaakt voor een project waarbij we deelmobiliteit op het platteland aantrekkelijker moesten maken. Daarvoor hebben we een nieuw concept bedacht: Wheelz.',
-        link: 'https://robertzien.github.io/wheelz/'
     },
 ];
 
